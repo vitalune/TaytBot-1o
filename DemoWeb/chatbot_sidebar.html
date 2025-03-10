@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chatbot Sidebar Demo</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+    .background {
+      background: url(KCF_website.png') no-repeat center center fixed;
+      background-size: cover;
+      height: 100%;
+      position: relative;
+    }
+    .chat-sidebar {
+      position: fixed;
+      right: 0;
+      top: 20%;
+      width: 300px;
+      height: 60%;
+      background: #fff;
+      box-shadow: -2px 0 5px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+      transform: translateX(100%);
+    }
+    .chat-sidebar.open {
+      transform: translateX(0);
+    }
+    .chat-toggle {
+      position: fixed;
+      right: 310px;
+      top: 30%;
+      cursor: pointer;
+      padding: 10px;
+      background: #007BFF;
+      color: #fff;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="background">
+    <button class="chat-toggle">Chat</button>
+    <div class="chat-sidebar" id="chatSidebar">
+      <!-- Chatbot UI goes here -->
+      <h3>Chatbot</h3>
+      <div id="chatContent">Welcome! How can I help?</div>
+    </div>
+  </div>
+  <script>
+    const toggleBtn = document.querySelector('.chat-toggle');
+    const sidebar = document.getElementById('chatSidebar');
+    toggleBtn.addEventListener('click', () => {
+      sidebar.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
