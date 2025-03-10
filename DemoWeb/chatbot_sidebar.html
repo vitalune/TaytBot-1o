@@ -1,61 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Chatbot Sidebar Demo</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TaytBot Demo</title>
   <style>
+    /* Global styles */
     body, html {
       margin: 0;
       padding: 0;
       height: 100%;
+      font-family: 'helvetica', sans-serif;
     }
+    /* Background image using a local file */
     .background {
       background: url('KCF_website.png') no-repeat center center fixed;
       background-size: cover;
       height: 100%;
       position: relative;
     }
-    .chat-sidebar {
+    /* DocsBot container styling */
+    #docsbotai-root {
       position: fixed;
-      right: 0;
-      top: 20%;
-      width: 300px;
-      height: 60%;
-      background: #fff;
-      box-shadow: -2px 0 5px rgba(0,0,0,0.3);
-      transition: transform 0.3s ease;
-      transform: translateX(100%);
-    }
-    .chat-sidebar.open {
-      transform: translateX(0);
-    }
-    .chat-toggle {
-      position: fixed;
-      right: 310px;
-      top: 30%;
-      cursor: pointer;
-      padding: 10px;
-      background: #007BFF;
-      color: #fff;
-      border: none;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
     }
   </style>
 </head>
 <body>
   <div class="background">
-    <button class="chat-toggle">Chat</button>
-    <div class="chat-sidebar" id="chatSidebar">
-      <!-- Chatbot UI goes here -->
-      <h3>Chatbot</h3>
-      <div id="chatContent">Welcome! How can I help?</div>
-    </div>
+    <!-- The DocsBot widget will mount in this container -->
+    <div id="docsbotai-root"></div>
   </div>
-  <script>
-    const toggleBtn = document.querySelector('.chat-toggle');
-    const sidebar = document.getElementById('chatSidebar');
-    toggleBtn.addEventListener('click', () => {
-      sidebar.classList.toggle('open');
-    });
+
+  <!-- DocsBot widget initialization -->
+  <script type="text/javascript">
+    window.DocsBotAI = window.DocsBotAI || {};
+    DocsBotAI.init = function(e) {
+      return new Promise((t, r) => {
+        var n = document.createElement("script");
+        n.type = "text/javascript";
+        n.async = true;
+        n.src = "https://widget.docsbot.ai/chat.js";
+        let o = document.getElementsByTagName("script")[0];
+        o.parentNode.insertBefore(n, o);
+        n.addEventListener("load", () => {
+          let n;
+          Promise.all([
+            new Promise((t, r) => {
+              window.DocsBotAI.mount(Object.assign({}, e)).then(t).catch(r);
+            }),
+            (n = function e(t) {
+              return new Promise(e => {
+                if (document.querySelector(t)) return e(document.querySelector(t));
+                let r = new MutationObserver(n => {
+                  if (document.querySelector(t)) {
+                    e(document.querySelector(t));
+                    r.disconnect();
+                  }
+                });
+                r.observe(document.body, { childList: true, subtree: true });
+              });
+            })("#docsbotai-root"),
+          ]).then(() => t()).catch(r);
+        });
+        n.addEventListener("error", e => {
+          r(e.message);
+        });
+      });
+    };
+  </script>
+  <script type="text/javascript">
+    // Initialize DocsBot with unique ID
+    DocsBotAI.init({id: "xwIbVScaj0QaHNNbXE88/Fexkxwkxg677RTx6Z0WN"});
   </script>
 </body>
 </html>
