@@ -5,21 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>TaytBot Demo</title>
   <style>
-    /* Global styles */
+
     body, html {
       margin: 0;
       padding: 0;
       height: 100%;
       font-family: 'helvetica', sans-serif;
     }
-    /* Background image using a local file */
+
     .background {
-      background: url('KCF_website.png') no-repeat center center fixed;
+      background: url('KCF_website.png');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: fixed;
       background-size: cover;
-      height: 100%;
-      position: relative;
-    }
-    /* DocsBot container styling */
+      width: 100%;
+      height: 100vh; 
+} 
+
     #docsbotai-root {
       position: fixed;
       bottom: 20px;
