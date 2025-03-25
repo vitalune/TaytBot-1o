@@ -1,0 +1,641 @@
+/* Child Theme CSS */
+
+/*** New Enterprise Case Study needed less margin over the quote ***/
+blockquote.wp-block-quote.has-text-align-center.quote-ne.is-layout-flow.wp-block-quote-is-layout-flow {
+    margin-top: 0px;
+}
+
+/*** podcast page margin bottom for column ***/
+.wp-block-columns.podcast.is-layout-flex.wp-container-core-columns-is-layout-2.wp-block-columns-is-layout-flex {
+    margin-bottom: 0px!important;
+}
+
+/**** Mini Summit pages styling *****/
+
+.wp-block-group.alignfull.summit-styling.has-primary-background-color.has-background {
+    margin-bottom: 30px;
+	background-color: #27568a;
+}
+
+.wp-block-columns.summit-margins.is-layout-flex.wp-container-core-columns-is-layout-6.wp-block-columns-is-layout-flex {
+    margin-bottom: 26px;
+}
+
+@media (max-width: 450px) {
+.wp-block-group.alignfull.summit-styling.has-primary-background-color.has-background {
+    padding-bottom: 0px;
+}
+}
+
+
+
+
+
+/*salesforce embed iframe form to remove horizontal scroll */
+@media (max-width: 450px) {
+.newsletter-footer iframe {
+    height: 650px;
+}
+	
+.newsletter-download iframe {
+    height: 650px!important;
+}
+	
+.kcf-guide iframe {
+    height: 880px;
+}
+.kcf-guide-spanish iframe {
+    height: 780px;
+}
+	
+.contact-us-form iframe {
+    height: 900px !important;
+}
+}
+
+
+/*Asset Case Studies needed less padding*/
+
+@media (min-width: 1380px) {
+    .wp-block-columns.wp-block-columns.asset-saves {
+        margin-bottom: 0rem;
+    }
+}
+.wp-block-group.alignfull.gray-background {
+    background-color: #e9e9e9;
+	padding-bottom: 6rem !important;
+}
+
+
+/*MCSA ESA UPDATED page bulleted margin bottom too big */
+.wp-block-columns.mcsa-margin.is-layout-flex.wp-container-core-columns-is-layout-9.wp-block-columns-is-layout-flex {
+    margin-bottom: 0px;
+}
+
+.wp-block-columns.stat-margins.is-layout-flex.wp-container-core-columns-is-layout-8.wp-block-columns-is-layout-flex {     
+	margin-bottom: 0px; }
+
+/*homepage footer newsletter styling due to adding more form fields */
+
+@media (min-width: 992px) {
+    .footer .footer-about {
+        max-width: none;
+    }
+	.col-lg-4 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+    .offset-lg-2 {
+        margin-left: 4%;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-lg-6 {
+        flex: 0 0 auto;
+        width: 40%;
+    }
+}
+
+
+/* logos on the resource hub page needed the background margin and padding to be fixed */
+.wp-block-columns.logo-background.has-light-grey-to-white-gradient-background.has-background.is-layout-flex.wp-container-core-columns-is-layout-21.wp-block-columns-is-layout-flex {
+    margin-top: 0px;
+    padding: 20px;
+}
+
+
+/*GP quote at the top of the page needed less top margin */
+blockquote.wp-block-quote.has-text-align-center.gp-quote.is-layout-flow.wp-block-quote-is-layout-flow {
+    margin-top: 0px;
+}
+
+/*stat callout on Utilities page in the Talen section had large bottom margin */
+
+.wp-block-columns.stat-margins.is-layout-flex.wp-container-core-columns-is-layout-3.wp-block-columns-is-layout-flex {
+    margin-bottom: auto;
+}
+
+
+/* fix UL indent being too large for the list*/
+ul.indent {
+    padding-left: 15px;
+}
+
+/*fixing rigcloud case study quote padding at the top*/
+blockquote.wp-block-quote.has-text-align-center.rigcloud.has-large-font-size.is-layout-flow.wp-block-quote-is-layout-flow {
+    margin-top: 0px;
+}
+
+/*quote font is too big on mobile, fixing this to be smaller */
+@media (max-width: 450px) {
+blockquote.wp-block-quote.is-layout-flow.wp-block-quote-is-layout-flow p {
+    font-size: 2.2rem;
+}
+	
+blockquote.wp-block-quote.has-text-align-center.has-x-large-font-size.is-layout-flow.wp-block-quote-is-layout-flow p {
+    font-size: 36px !important;
+}
+}
+
+/* have buttons fit to the bottom of the container and have equal height */
+
+body .is-layout-flex {
+    margin-top: auto;
+}
+
+
+/* pop up styling for the Industry pages Demo form*/
+
+iframe.demo-form {
+    border: 1px solid #fff!important;
+}
+
+iframe#hs-form-iframe-1 {
+	border: none!important;
+}
+
+hr.ays-popup-hrs-default {
+    display: none;
+}
+
+h2.ays_pb_show_title_on_mobile.ays_pb_title_styles_1 {
+    font-size: 4rem!important;
+    font-weight: 800!important;
+}
+
+iframe#hs-form-iframe-0 {
+    border: none!important;
+	margin-bottom: 0px!important;
+}
+
+.ays_content_box p {
+    margin-bottom: 0px;
+}
+
+.ays-pb-modal.ays-pb-modal_1.ays-pb-border-mobile_1.fadeIn {
+    height: fit-content!important;
+}
+
+.ays_content_box {
+    padding-bottom: 0px !important;
+}
+
+/* styling for the testimonial slider */
+
+
+#sp-testimonial-free-wrapper-13469.sp-testimonial-free-section .sp-testimonial-client-rating {
+    color: #eac845;
+}
+
+h4.tpro-client-name {
+    max-width: -webkit-fill-available;
+}
+
+#sp-testimonial-pro-13469.sp-testimonial-pro-section .tpro-client-testimonial p {
+    font-size: 3rem!important;
+    line-height: 1.25;
+    color: #0d578e;
+    font-weight: 500;
+}
+
+.tpro-testimonial-text p {
+	font-size: 3rem!important;
+    line-height: 1.25;
+    color: #0d578e;
+    font-weight: 500;
+}
+
+h4.tpro-client-name {
+    font-size: 1em !important;
+	font-weight: 700 !important;
+}
+
+#sp-testimonial-pro-wrapper-13469 .sp-testimonial-pro-section .sp-testimonial-pro-client-rating {
+    color: #eac845;
+}
+
+i.fa.fa-star {
+    border: 1px solid #06173c;
+    background: #06173c;
+    border-radius: 40px;
+    padding: 4px;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic, .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+    display: none;
+}
+
+#sp-testimonial-pro-13619 .sp-testimonial-pro-section .tpro-button-prev, #sp-testimonial-pro-13619 .sp-testimonial-pro-section .tpro-button-next{
+    border: 3px solid #06173c;
+    padding: 20px;
+    color: #06173c;
+    border-radius: 50%;
+}
+
+
+
+#sp-testimonial-pro-13619 .sp-testimonial-pro-section .tpro-button-prev:hover, #sp-testimonial-pro-13619.sp-testimonial-pro-section .tpro-button-next:hover{
+    background: #eac845;
+    border-color: #06173c;
+    padding: 20px;
+}
+
+i.sptpro-icon-angle-left:before {
+    color: #06173c!important;
+}
+
+i.sptpro-icon-angle-right:before {
+    color: #06173c!important;
+}
+
+i.sptpro-icon-left-open-4:hover {
+    color: #06173c!important;
+}
+
+.sptpro-icon-right-open-4:before:hover {
+    color: #06173c!important;
+}
+
+#sp-testimonial-pro-wrapper-13469  .sp-testimonial-pro-section {
+    margin-bottom: 0px;
+}
+
+div#sp-testimonial-pro-13469  {
+    padding-bottom: 0px !important;
+}
+
+div#sp-testimonial-pro-13717 {
+    padding-bottom: 0px !important;
+}
+
+div#sp-testimonial-pro-13715 {
+    padding-bottom: 0px !important;
+}
+
+div#sp-testimonial-pro-13729 {
+    padding-bottom: 0px !important;
+}
+
+
+/*hero banner subheading paragraph text we too big*/
+.kcf-hero__subheading-custom {
+    font-size: 1.5rem;
+}
+
+
+/*padding for value calculator heading */
+
+.wp-block-columns.value-header.is-layout-flex.wp-container-core-columns-is-layout-4.wp-block-columns-is-layout-flex {
+    margin-bottom: 20px;
+}
+.kcf-form.savings h2.kcf-form__title {
+    margin-bottom: 10px!important;
+}
+.kcf-form.savings h4 {
+    color: #EAC845;
+    margin-bottom: 4rem;
+}
+
+/*with new WP update on 4/4/2024 the padding got messed up for the blue background sections */
+@media (min-width: 1600px) and (min-width: 1600px){
+.wp-block-columns.has-background, .wp-block-group.has-background {
+    padding-left: 12.5%;
+    padding-right: 12.5%t;
+}
+}
+	
+@media (min-width: 1200px) {
+.wp-block-columns.has-background, .wp-block-group.has-background {
+    padding-bottom: 2rem!important;
+}	
+}
+
+
+/*table of contents for Dr. Liker Story */
+
+
+.wp-block-separator, hr {
+    margin: 2px 0px 40px 0px!important;
+}
+
+.su-table table tr.heading-table td {
+    background-color: #06173c !important;
+	color:#fff!important;
+}
+
+
+/*formidable forms override styles*/
+.frm_primary_label {
+    text-transform: none;
+}
+
+
+
+.wp-block-columns.value-header.is-layout-flex.wp-container-core-columns-layout-4.wp-block-columns-is-layout-flex {
+    margin-bottom: 0px!important;
+}
+
+.with_frm_style .frm_input_group .frm_inline_box:first-child {
+    background-color: #06173c;
+    color: #eac845;
+    font-weight: 600;
+}
+
+.with_frm_style .frm_input_group .chosen-container + .frm_inline_box, .with_frm_style .frm_input_group select + .frm_inline_box, .with_frm_style .frm_input_group input + .frm_inline_box {
+ background-color: #06173c;
+    color: #eac845;
+    font-weight: 600;
+}
+
+
+/*hide black line that shows up around video on scroll */
+video {
+    outline: 6px solid white;
+    outline-offset: -6px;
+}
+
+/* styling the carousel plugin to match our website styles*/
+
+.carousel-slider .carousel-slider__caption .caption {
+	font-size:16px;
+	color:#06173c;
+}
+
+img.attachment-medium_large.size-medium_large:hover {
+    background-color: #f0f0f0;
+	transition: 0.6s ease;
+	opacity: 1;	
+}
+
+.carousel-slider .owl-nav .owl-next svg, .carousel-slider .owl-nav .owl-prev svg {
+	background: #eac845;
+	border: 3px solid #9e8112;
+	border-radius: 60px;
+	color: #06173c;
+	
+}
+
+.carousel-slider .owl-nav .owl-next svg:hover, .carousel-slider .owl-nav .owl-prev svg:hover{
+	background: #06173c;
+	border: 3px solid #eac845;
+	border-radius: 60px;
+	color: #eac845;
+}
+
+.carousel-slider .carousel-slider__caption .title {
+    color: #06173c;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+
+
+/*creating more bottom margin for the CTA section */
+
+@media (min-width: 1380px){
+	
+.wp-block-kula-cta.is-style-row.is-style-row.is-last {
+    margin-bottom: -10rem;
+}
+}
+/*stats on hardware pages remove the huge bottom margin*/
+
+.wp-block-columns.stat-margins.is-layout-flex.wp-container-core-columns-is-layout-1.wp-block-columns-is-layout-flex {
+    margin-bottom: 0px !important;
+}
+
+.wp-block-columns.stat-margins.is-layout-flex.wp-container-core-columns-is-layout-5.wp-block-columns-is-layout-flex {
+    margin-bottom: 0px;
+}
+
+/*fix large bottom padding on blue background full width*/
+.wp-block-group.alignfull.has-primary-background-color.has-background.is-layout-constrained.wp-block-group-is-layout-constrained {
+    padding-bottom:0px;
+
+}
+
+/*add an opacity on hover for image that is a link */
+a img:hover {
+    opacity: 0.75;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+/*hero image background color, was originally black and ugly */
+.kcf-hero--internal .kcf-hero__image-inner {
+    background: #06173C;
+}
+
+/* kcf yellow hightlight behind subheader text in banner */
+mark {
+    background: #FAD226;
+}
+/* minimize the height of the background grey text */
+h2.has-text-underlay::before {
+	 min-height: 2.65em;
+}
+
+/* removed bold font weight 700 from list elements, you can still change list items to bold using the rich-text editor */
+ol li, ul li {
+    font-weight: 500;
+}
+
+/* keep the number and bullet in ol and ul bold */
+ol li::marker, ul li::marker {
+    font-weight: 700;
+}
+
+/*styled the captions for a video or an image*/
+.wp-block-embed.is-type-video figcaption, .wp-block-image figcaption {
+    font-size: 1.45rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+/*paragraph font size was SUPER small in a column layout...didn't get formatted 
+.is-layout-flow.wp-block-column p {
+    font-size: 1.8rem;
+}*/ 
+
+/* columns with background color were never given padding */
+.is-layout-flow.wp-block-column.has-primary-background-color.has-background {
+    padding: 30px;
+}
+
+.wp-block-column.has-primary-background-color.has-background.is-layout-flow.wp-block-column-is-layout-flow {
+    padding: 30px;
+}
+
+.wp-block-column.has-light-grey-to-white-gradient-background.has-background.is-layout-flow.wp-block-column-is-layout-flow {
+    padding: 30px;
+}
+
+/*text color won't display in a column with a background color*/
+.is-layout-flow.wp-block-column.has-primary-background-color.has-background p.has-secondary-color.has-text-color {
+    color: #eac845;
+}
+
+.is-layout-flow.wp-block-column.has-primary-background-color.has-background h4.has-secondary-color.has-text-color  {
+    color: #eac845;
+}
+
+/*if medium font size selected make it 18px, not 20*/
+body {
+--wp--preset--font-size--medium: 1.8rem;
+}
+
+/*too much padding on top of blog post - removed padding*/
+section.container-fluid.main.main--blog {
+    padding-top: 0px;
+}
+
+/*container has too much top padding when there is a background color - made the padding smaller */
+.wp-container-15.wp-block-group.has-light-grey-to-white-gradient-background.has-background, .wp-container-14.wp-block-group.has-light-grey-to-white-gradient-background.has-background {
+    padding-top: 5rem;
+}
+
+/*padding below subheading custom so the line is not right up against the text */
+.kcf-hero__subheading-custom {
+    padding-bottom: 10px;
+}
+
+/*needed less margin bottom for the ROI box page*/
+.is-layout-flex.wp-container-12.wp-block-columns.roi-box {
+    margin-bottom: 1rem;
+}
+
+/*quote needed more line height*/
+blockquote.wp-block-quote.has-text-align-left p {
+    line-height: 3.1rem;
+}
+/*quote section on the homepage had too much padding on the left and the bottom*/
+@media (min-width: 769px) {
+.wp-block-column blockquote {
+    margin: 0.5rem 0 0rem;
+}
+/*less margin on top and bottom of separator */
+.wp-block-separator, hr {
+    margin: 4.8rem auto;
+}
+}
+@media (min-width: 1600px) {
+.has-text-align-left>blockquote, blockquote.has-text-align-left {
+    padding-right: 2%;
+}
+}
+
+/*when block has a background, there is too much top and bottom padding */
+@media (min-width: 1200px) {
+.wp-block-columns.has-background, .wp-block-group.has-background {
+	padding-top: 6rem;
+	padding-bottom: 6rem;
+}
+}
+
+/*too much padding on the bottom of the banner - changed it from 9.6rem to 3.8rem */
+@media (min-width: 769px) {
+	
+.kcf-hero {
+    padding-bottom: 3.8rem;
+} 		
+}
+
+@media (min-width: 1200px) {
+.kcf-hero__image {
+    height: fit-content;
+}
+.kcf-hero {
+    padding-bottom: 3.8rem;
+} 		
+}
+
+/*@media (min-width: 1600px){
+.kcf-hero--home {
+    min-height: 70rem;
+}
+}
+
+*/
+
+@media (max-width: 450px) {
+	.imh-6310-annotation-box.imh-6310-annotation-box-7 {
+    display: none;
+}
+	
+	.imh-6310-annotation-box.imh-6310-annotation-box-6 {
+    display: none;
+}
+	
+	.imh-6310-annotation-box.imh-6310-annotation-box-3 {
+	display:none;
+	}
+	
+	.imh-6310-annotation-box.imh-6310-annotation-box-10 {
+    display: none;
+}
+	
+	.imh-6310-annotation-box.imh-6310-annotation-box-6 {
+	display:none;
+	}
+	
+	.kcf-heading-and-text__copy p mark.has-inline-color {
+    display: none;
+}
+	
+	h2.kcf-heading-and-text__heading.has-text-underlay.underlay-width-3 {
+    font-size: 3rem;
+    padding-bottom: 0px;
+}
+	
+	#sp-testimonial-pro-13469.sp-testimonial-pro-section .tpro-client-testimonial p {
+    font-size: 2rem!important;
+}
+	
+	.tpro-testimonial-text p {
+	font-size: 2rem!important;	
+	}
+	
+h2.ays_pb_show_title_on_mobile.ays_pb_title_styles_1 {
+    font-size: 2.8rem!important;
+
+}
+	
+.ays-pb-modal.ays-pb-modal_1.ays-pb-border-mobile_1.fadeIn {
+	height:auto!important;
+}
+}
+
+@media (min-width: 450px) {
+	figure.wp-block-image.size-full.smartsensing.hide-border {
+    display: none;
+}	
+	.kcf-heading-and-text__copy.in-view img.wp-image-12955 {
+    display: none;
+}
+	
+	.kcf-heading-and-text__copy.in-view img.wp-image-12947 {
+    display: none;
+}
+	
+	.kcf-heading-and-text__copy.in-view img.wp-image-12953 {
+    display: none;
+}
+	
+	.kcf-heading-and-text__copy.in-view img.wp-image-12954 {
+    display: none;
+}
+
+}
+
+@media (max-width: 769px) {
+	h2.video-heading {
+	font-size: 1.5em!important;
+}
+	blockquote.wp-block-quote.has-text-align-left p {
+    line-height: inherit;
+}
+}

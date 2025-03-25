@@ -1,0 +1,12 @@
+/***************************************
+
+	#CLIENT SIDE
+
+****************************************/
+
+@media (min-width: 576px) {
+	.wp-block-kula-cta.alignleft,
+	.wp-block-kula-cta.alignright {
+		max-width: 48%;
+	}
+}
