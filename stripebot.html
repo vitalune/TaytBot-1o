@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TaytBot Demo</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+
+    .background {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+    }
+
+    .background iframe {
+      display: block;
+      width: 100%;
+      height: 100vh;
+      border: none;
+      z-index: -1;
+      }
+
+    #docsbotai-root {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+  </style>
+</head>
+<body>
+  <div class="background">
+    <!-- kcf website is embedded here -->
+    <iframe src="kcf_webfull.html"></iframe>
+    <!-- DocsBot widget will mount in this container -->
+   <div id="docsbotai-root"></div>
+   </div>
+<script type="text/javascript">window.DocsBotAI=window.DocsBotAI||{},DocsBotAI.init=function(e){return new Promise((t,r)=>{var n=document.createElement("script");n.type="text/javascript",n.async=!0,n.src="https://widget.docsbot.ai/chat.js";let o=document.getElementsByTagName("script")[0];o.parentNode.insertBefore(n,o),n.addEventListener("load",()=>{let n;Promise.all([new Promise((t,r)=>{window.DocsBotAI.mount(Object.assign({}, e)).then(t).catch(r)}),(n=function e(t){return new Promise(e=>{if(document.querySelector(t))return e(document.querySelector(t));let r=new MutationObserver(n=>{if(document.querySelector(t))return e(document.querySelector(t)),r.disconnect()});r.observe(document.body,{childList:!0,subtree:!0})})})("#docsbotai-root"),]).then(()=>t()).catch(r)}),n.addEventListener("error",e=>{r(e.message)})})};</script>
+<script type="text/javascript">
+  DocsBotAI.init({id: "xwIbVScaj0QaHNNbXE88/oEG8a9u7Yf8JPjgR8nWr"});
+</script>
+</body>
+</html>
